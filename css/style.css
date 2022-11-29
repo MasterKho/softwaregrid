@@ -1,0 +1,44 @@
+body{
+    background-color: #F2F2F2;
+
+}
+main{
+width: 100%;
+max-width: 1120px;
+height: 398px;
+background-color: bisque;
+}
+
+div{
+    height: 56px;
+}
+span{
+    margin-left: 16px 0 24px 32px;
+    font-family: 'TT Lakes';
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    color: #7E7E82;
+}
+
+li{
+    width: 240px;
+    height: 74px;
+    margin: 0;
+    padding: 0;
+    margin-left: 16px;
+    list-style-type: none;
+    background-color: aquamarine;
+}
+
+ul{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+margin: 0;
+padding: 0;
+margin-left: 16px;
+gap:16px;
+}
+
