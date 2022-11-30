@@ -22,7 +22,7 @@ span{
     color: #7E7E82;
 }
 
-li{
+.swiper-item{
     width: 240px;
     height: 74px;
     margin: 0;
@@ -32,7 +32,7 @@ li{
     background-color: aquamarine;
 }
 
-ul{
+.swiper-items{
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;

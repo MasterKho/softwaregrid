@@ -49,6 +49,7 @@ margin-left: -5px;
 }
 
 @media (max-width: 710px){
+
     li:nth-child(6){
         display: none;
     }
@@ -58,12 +59,10 @@ margin-left: -5px;
     }
 
     @media (max-width: 320px){
-     ul{
-        display: flex;
-        flex-direction: row;
-     }
-     li{
-        height: 72px;
-        width: 240px;
+    
+        .swiper{
+            display: none;
+           }
+       
         }
-        }
+
