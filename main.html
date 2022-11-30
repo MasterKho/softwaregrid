@@ -4,26 +4,78 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="media.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <title>Gridsite</title>
   </head>
   <body>
     <main>
       <div><span>Ремонт техники различных брендов</span></div>
-      <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-        <li>5</li>
-        <li>6</li>
-        <li>7</li>
-        <li>8</li>
-        <li>9</li>
-        <li>10</li>
-        <li>11</li>
-      </ul>
+      <div class="swiper">
+        <div class="swiper-wrapper swiper-items">
+          <div class="swiper-slide swiper-item">Slide 1</div>
+          <div class="swiper-slide swiper-item">Slide 2</div>
+          <div class="swiper-slide swiper-item">Slide 3</div>
+          <div class="swiper-slide swiper-item">Slide 4</div>
+          <div class="swiper-slide swiper-item">Slide 5</div>
+          <div class="swiper-slide swiper-item">Slide 6</div>
+          <div class="swiper-slide swiper-item">Slide 7</div>
+          <div class="swiper-slide swiper-item">Slide 8</div>
+          <div class="swiper-slide swiper-item">Slide 9</div>
+          <div class="swiper-slide swiper-item">Slide 10</div>
+          <div class="swiper-slide swiper-item">Slide 11</div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-scrollbar"></div>
+      </div>
     </main>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+
+        breakpoints: {
+          // when window width is >= 320px
+          320: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          // when window width is >= 480px
+          480: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          // when window width is >= 640px
+          640: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+        },
+      });
+    </script>
   </body>
 </html>
