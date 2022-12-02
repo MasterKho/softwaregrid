@@ -58,11 +58,11 @@ margin-left: -5px;
      }
     }
 
-    @media (max-width: 320px){
+    @media (min-width: 320px){
     
-        .swiper{
-            display: none;
+        script{
+            visibility: hidden;
            }
        
         }
-
+        
